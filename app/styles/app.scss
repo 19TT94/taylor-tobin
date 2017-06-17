@@ -3,10 +3,11 @@
 @import 'foundation-sites/foundation';
 @include foundation-everything;
 
+// Pages
+@import 'home';
+
 // Settings
 @import 'config';
 @import 'page';
 @import 'nav';
-
-// Pages
-@import 'home';
+@import 'actions';

@@ -5,10 +5,16 @@ export default Ember.Component.extend({
         Ember.run.scheduleOnce('afterRender', () => {
             illookinati({
                 target: document.querySelector('.card'),
-                max: 20,
+                max: 10,
                 targetPerspective: '800px',
                 useDistance: false
             });
         });
+    },
+
+    actions: {
+        hideText: function() {
+            this.toggleProperty('siteState.hideText');
+        }
     }
 });

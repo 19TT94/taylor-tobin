@@ -1,8 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Megrim|Open+Sans+Condensed:300');
+
 // Colors
 $overlay-black: rgba(0,0,0,0.8);
 $overlay-white: rgba(225,225,225,0.8);
 
 // Settings
+.ember-application {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Megrim', cursive;
+}
+
 ul {
     list-style: none;
 }

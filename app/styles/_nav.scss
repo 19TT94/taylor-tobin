@@ -4,18 +4,27 @@
     z-index: 3;
 
     &__title {
+        margin: 1rem;
         position: fixed;
         top: 0;
         left: 0;
     }
 
     &__mobile-toggle {
+        margin: 1rem;
         position: fixed;
         top: 0;
         right: 0;
 
         @include breakpoint (medium up) {
             display: none;
+        }
+
+        &--bar {
+            width: 15px;
+            height: 2px;
+            background: $black;
+            margin: 2px 0;
         }
     }
 
@@ -30,12 +39,19 @@
 
     &__expanded {
         display: none;
+        margin: 1rem;
+
         @include breakpoint (medium up) {
             display: inline-flex;
             position: absolute;
             top: 0;
             right: 0;
             padding: 20px;
+        }
+
+        &--link {
+            color: $white;
+            padding: 0 .5rem;
         }
     }
 }

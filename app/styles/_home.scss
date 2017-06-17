@@ -10,6 +10,12 @@
 
     &__title {
         padding: 2rem;
+
+        &--sub {
+            opacity: 1;
+            width: auto;
+            transition: all .5s ease;
+        }
     }
 }
 
@@ -19,6 +25,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        opacity: 1;
+        transition: all 3s ease;
     }
 }
 
@@ -28,5 +36,44 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        opacity: 0;
+        transition: all 3s ease;
     }
+}
+
+.design {
+    &__right {
+        background-image: url('/images/clouds.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        transition: all 3s ease;
+    }
+}
+
+.photo {
+    &__left {
+        background-image: url('/images/dome.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0;
+        transition: all 3s ease;
+    }
+}
+
+.app {
+    &__right {
+        background-image: url('/images/rock.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        transition: all 3s ease;
+    }
+}
+
+.contact {
+    
 }
