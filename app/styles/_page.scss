@@ -1,0 +1,19 @@
+.white {
+    background-color: $white;
+    color: $black;
+}
+
+.black {
+    background-color: $black;
+    color: $white;
+}
+
+.full {
+    width: 100vw;
+    height: 50vh;
+
+    @include breakpoint (medium up) {
+        width: 50vw;
+        height: 100vh;
+    }
+}

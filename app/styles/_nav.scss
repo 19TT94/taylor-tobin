@@ -20,7 +20,7 @@
     &__mobile {
         width: 100vw;
         height: 100vw;
-        opacity: 0;
+        display: none;
         @include breakpoint (medium up) {
             display: none;
         }
