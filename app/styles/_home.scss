@@ -1,17 +1,30 @@
 .card {
+    z-index: 2;
     width: 45%;
-    height: 150px;
     position: absolute;
     top: calc(50% - 75px);
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
+
+    &__title {
+        padding: 2rem;
+    }
 }
 
 .home {
     &__right {
         background-image: url('/images/wave.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.web {
+    &__left {
+        background-image: url('/images/palms.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
