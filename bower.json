@@ -1,6 +1,7 @@
 {
   "name": "taylor-tobin",
   "dependencies": {
-    "foundation-sites": "^6.3.1"
+    "foundation-sites": "^6.3.1",
+    "fullpage.js": "^2.9.4"
   }
 }
