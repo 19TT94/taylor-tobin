@@ -21,6 +21,7 @@ module.exports = function(defaults) {
 
   app.import('bower_components/fullpage.js/dist/jquery.fullpage.min.js');
   app.import('bower_components/fullpage.js/dist/jquery.fullpage.min.css');
+  app.import('bower_components/illookinati/src/main.js');
 
   return app.toTree();
 };
