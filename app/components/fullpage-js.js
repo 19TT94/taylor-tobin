@@ -11,6 +11,7 @@ export default Ember.Component.extend({
                 navigationPosition: 'right',
                 onLeave: function(index, nextIndex, direction) {
                     self.toggleProperty('siteState.hideText');
+                    self.toggleProperty('siteState.image');
                 }
             });
         });
