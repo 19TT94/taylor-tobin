@@ -1,0 +1,12 @@
+// Vendor
+@import "settings";
+@import 'foundation-sites/foundation';
+@include foundation-everything;
+
+// Settings
+@import 'config';
+@import 'page';
+@import 'nav';
+
+// Pages
+@import 'home';

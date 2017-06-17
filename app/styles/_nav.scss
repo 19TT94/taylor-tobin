@@ -1,0 +1,39 @@
+.nav {
+    width: 100%;
+
+    &__title {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    &__mobile-toggle {
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        @include breakpoint (medium up) {
+            display: none;
+        }
+    }
+
+    &__mobile {
+        width: 100vw;
+        height: 100vw;
+        opacity: 0;
+        @include breakpoint (medium up) {
+            display: none;
+        }
+    }
+
+    &__expanded {
+        display: none;
+        @include breakpoint (medium up) {
+            display: inline-flex;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px;
+        }
+    }
+}
