@@ -10,7 +10,12 @@
 
     &__title {
         padding: 2rem;
-        opacity: 1;
+
+        &--sub {
+            opacity: 1;
+            width: auto;
+            transition: all .5s ease;
+        }
     }
 }
 
