@@ -6,11 +6,24 @@ export default Ember.Component.extend({
         let self = this;
         Ember.run.scheduleOnce('afterRender', () => {
             Ember.$(this.element).fullpage({
+                anchors:[
+                    'home',
+                    'web',
+                    'design',
+                    'photo',
+                    'app',
+                    'contact'
+                ],
                 menu: 'dots',
                 navigation: true,
                 navigationPosition: 'right',
                 onLeave: function(index, nextIndex, direction) {
-                    self.toggleProperty('siteState.hideText');
+                    if(nextIndex != 1) {
+                        self.set('siteState.hideText', true);
+                    }
+                    else {
+                        self.set('siteState.hideText', false);
+                    }
                     self.toggleProperty('siteState.image');
                 }
             });
