@@ -1,6 +1,6 @@
 // Global Section Config
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-    background: $white;
+    background: $gradient-gold;
 }
 
 // Helpter Classes
@@ -12,6 +12,10 @@
 .black {
     background-color: $black;
     color: $white;
+}
+
+.gold {
+    color: $gold;
 }
 
 .full {
