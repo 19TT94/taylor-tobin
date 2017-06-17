@@ -10,5 +10,10 @@
 }
 
 .home {
-
+    &__right {
+        background-image: url('/images/wave.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
