@@ -2,7 +2,18 @@
 
 <div class="nav">
 
-    <h2 class="nav__title"><a class="nav__title--text" href="#home">TT</a></h2>
+    <div class="nav__logo gold">
+        <a class="nav__logo--link" href="#home">
+            <div class="nav__logo--letter">
+                <div class="nav__logo--letter--bar flat {{if siteState.logo 'left'}}"></div>
+                <div class="nav__logo--letter--bar vert {{if siteState.logo 'translate'}}"></div>
+            </div>
+            <div class="nav__logo--letter">
+                <div class="nav__logo--letter--bar flat initial {{if siteState.logo 'right'}}"></div>
+                <div class="nav__logo--letter--bar vert {{if siteState.logo 'translate'}}"></div>
+            </div>
+        </a>
+    </div>
 
     <div class="nav__mobile-toggle gold">
         <div class="nav__mobile-toggle--bar"></div>

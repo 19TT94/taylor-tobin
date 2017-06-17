@@ -3,14 +3,57 @@
     position: absolute;
     z-index: 3;
 
-    &__title {
+    &__logo {
         margin: 1rem;
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 25px;
+        left: 25px;
 
-        &--text {
+        &--link {
             color: black;
+        }
+
+        &--letter {
+
+            &--bar {
+                background: $gradient-gold;
+                width: 20px;
+                height: 2px;
+
+                &.flat {
+                    position: absolute;
+                    top: -9px;
+                    transform: rotate(0deg);
+                    transition: all 1s ease;
+
+                    &.initial {
+                        transform: translate(20px);
+                    }
+
+                    &.translate {
+                        transform: translate(0px);
+                    }
+
+                    &.right {
+                        transform: rotate(35deg);
+                    }
+
+                    &.left {
+                        transform: rotate(-35deg);
+                    }
+                }
+
+                &.vert {
+                    position: absolute;
+                    top: 1px;
+                    transform: rotate(90deg);
+                    transition: all 1s ease;
+
+                    &.translate {
+                        transform: translate(0px);
+                    }
+                }
+            }
         }
     }
 
