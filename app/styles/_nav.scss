@@ -1,5 +1,7 @@
 .nav {
     width: 100%;
+    position: absolute;
+    z-index: 3;
 
     &__title {
         position: fixed;
