@@ -10,11 +10,5 @@ export default Ember.Component.extend({
                 useDistance: false
             });
         });
-    },
-
-    actions: {
-        hideText: function() {
-            this.toggleProperty('siteState.hideText');
-        }
     }
 });

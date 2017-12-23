@@ -1,21 +1,17 @@
 .card {
     z-index: 2;
-    width: 45%;
+    width: 20%;
     position: absolute;
-    top: calc(50% - 75px);
+    top: calc(50% - 25px);
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
+    border: 1px solid $gold;
 
     &__title {
-        padding: 2rem;
-
-        &--sub {
-            opacity: 1;
-            width: auto;
-            transition: all .5s ease;
-        }
+        padding: 10px;
+        font-size: 1.5em;
     }
 }
 
