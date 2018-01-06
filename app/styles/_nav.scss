@@ -17,11 +17,12 @@
 
             &--bar {
                 background: $gradient-gold;
-                width: 20px;
                 height: 2px;
 
                 &.flat {
                     position: absolute;
+                    width: 20px;
+                    left: -3px;
                     top: -9px;
                     transform: rotate(0deg);
                     transition: all 1s ease;
@@ -35,7 +36,7 @@
                     }
 
                     &.right {
-                        transform: rotate(35deg);
+                        transform: translateX(15px) rotate(35deg);
                     }
 
                     &.left {
@@ -45,13 +46,19 @@
 
                 &.vert {
                     position: absolute;
+                    width: 20px;
                     top: 1px;
                     transform: rotate(90deg);
                     transition: all 1s ease;
 
-                    &.translate {
-                        transform: translate(0px);
+                    &.right {
+                      left: 10px;
                     }
+
+                    &.translate {
+                        // transform: translate(0px);
+                    }
+
                 }
             }
         }
