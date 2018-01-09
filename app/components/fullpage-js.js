@@ -8,10 +8,10 @@ export default Ember.Component.extend({
             Ember.$(this.element).fullpage({
                 anchors:[
                     'home',
-                    'web',
-                    'design',
-                    'photo',
-                    'app',
+                    'pxl',
+                    'lbsu',
+                    'portfolio',
+                    'about',
                     'contact'
                 ],
                 menu: 'dots',
