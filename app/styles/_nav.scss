@@ -3,6 +3,14 @@
     position: absolute;
     z-index: 3;
 
+    .home-button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -15px;
+        left: -5px;
+    }
+
     &__logo {
         margin: 1rem;
         position: fixed;
@@ -10,6 +18,8 @@
         left: 25px;
 
         &--link {
+            width: 40px;
+            height: 20px;
             color: black;
         }
 
