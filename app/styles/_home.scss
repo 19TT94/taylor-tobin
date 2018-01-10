@@ -68,6 +68,19 @@
             font-size: 4em;
         }
     }
+
+    .jaguar {
+        position: absolute;
+        width: 30px;
+        bottom: 25%;
+        left: 85%;
+
+        @include breakpoint(medium up) {
+            width: 80px;
+            bottom: 5%;
+            left: 45%;
+        }
+    }
 }
 
 .web {
@@ -81,8 +94,30 @@
         transition-delay: .5s;
     }
 
+    .company {
+        position: absolute;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: bold;
+        color: $white;
+        line-height: 1px;
+        top: 20%;
+        right: 90%;
+
+        @include breakpoint(medium up) {
+            top: 5%;
+            right: 10%;
+        }
+    }
+
     .title {
         padding-top: 2rem;
+    }
+
+    .platform-title {
+        @include breakpoint(medium up) {
+            padding-top: 95%;
+        }
     }
 }
 
