@@ -2,7 +2,17 @@
 
 <div class="nav">
 
-    <h2 class="nav__title"><a class="nav__title--text" href="#home">TT</a></h2>
+    <div class="nav__logo gold">
+        <a class="home-button" href="#home"></a>
+        <div class="nav__logo--letter">
+            <div class="nav__logo--letter--bar flat {{if siteState.logo 'left'}}"></div>
+            <div class="nav__logo--letter--bar vert {{if siteState.logo 'translate'}}"></div>
+        </div>
+        <div class="nav__logo--letter">
+            <div class="nav__logo--letter--bar flat initial {{if siteState.logo 'right'}}"></div>
+            <div class="nav__logo--letter--bar vert right {{if siteState.logo 'translate'}}"></div>
+        </div>
+    </div>
 
     <div class="nav__mobile-toggle gold">
         <div class="nav__mobile-toggle--bar"></div>
@@ -11,18 +21,12 @@
     </div>
 
     <ul class="nav__mobile">
-        <li class="nav__mobile--link" data-menuanchor="#web"><a href="#web">Web</a></li>
-        <li class="nav__mobile--link" data-menuanchor="#design"><a href="#design">Design</a></li>
-        <li class="nav__mobile--link" data-menuanchor="#photo"><a href="#photo">Photo</a></li>
-        <li class="nav__mobile--link" data-menuanchor="#app"><a href="#app">App</a></li>
-        <li class="nav__mobile--link" data-menuanchor="#contact"><a href="#Contact">Contact</a></li>
+        <li class="nav__mobile--link" data-menuanchor="#app"><a href="#about">About</a></li>
+        <li class="nav__mobile--link" data-menuanchor="#contact"><a href="#contact">Contact</a></li>
     </ul>
 
     <ul class="nav__expanded">
-        <li class="nav__expanded--link" data-menuanchor="#web"><a href="#web">Web</a></li>
-        <li class="nav__expanded--link" data-menuanchor="#design"><a href="#design">Design</a></li>
-        <li class="nav__expanded--link" data-menuanchor="#photo"><a href="#photo">Photo</a></li>
-        <li class="nav__expanded--link" data-menuanchor="#app"><a href="#app">App</a></li>
+        <li class="nav__expanded--link" data-menuanchor="#app"><a href="#about">About</a></li>
         <li class="nav__expanded--link" data-menuanchor="#contact"><a href="#contact">Contact</a></li>
     </ul>
 

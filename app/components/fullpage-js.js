@@ -8,10 +8,11 @@ export default Ember.Component.extend({
             Ember.$(this.element).fullpage({
                 anchors:[
                     'home',
-                    'web',
-                    'design',
-                    'photo',
-                    'app',
+                    'pxl',
+                    'lbsu',
+                    'portfolio',
+                    'lemossa',
+                    'about',
                     'contact'
                 ],
                 menu: 'dots',
@@ -20,9 +21,11 @@ export default Ember.Component.extend({
                 onLeave: function(index, nextIndex, direction) {
                     if(nextIndex != 1) {
                         self.set('siteState.hideText', true);
+                        self.set('siteState.logo', true);
                     }
                     else {
                         self.set('siteState.hideText', false);
+                        self.set('siteState.logo', false);
                     }
                     self.toggleProperty('siteState.image');
                 }

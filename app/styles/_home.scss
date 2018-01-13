@@ -1,22 +1,27 @@
 .card {
     z-index: 2;
-    width: 45%;
     position: absolute;
-    top: calc(50% - 75px);
+    top: calc(50% - 25px);
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
+    border: 1px solid $gold;
+    width: 35%;
+
+    @include breakpoint(medium up) {
+        width: 25%;
+    }
 
     &__title {
-        padding: 2rem;
-
-        &--sub {
-            opacity: 1;
-            width: auto;
-            transition: all .5s ease;
-        }
+        padding: 10px;
+        font-size: 1.5em;
     }
+
+    // img {
+    //     width: 70px;
+    //     padding: 10px;
+    // }
 }
 
 .home {
@@ -29,9 +34,56 @@
         transition: all 3s ease;
         transition-delay: .5s;
     }
+
+    .quote {
+        text-align: center;
+        font-size: 2em;
+        padding-top: 25px;
+
+        @include breakpoint (medium up) {
+            padding: 45px;
+            font-size: 2.5em;
+        }
+    }
+
+    .description {
+        padding-top: 20px;
+        font-size: 1.2em;
+        text-align: center;
+
+        @include breakpoint (medium up ) {
+            text-align: left;
+        }
+    }
+
+    .position {
+        position: absolute;
+        transform: rotate(-90deg);
+        left: -18%;
+        bottom: 25%;
+        font-size: 2.5em;
+
+        @include breakpoint (medium up) {
+            left: -20%;
+            font-size: 4em;
+        }
+    }
+
+    .jaguar {
+        position: absolute;
+        width: 30px;
+        bottom: 25%;
+        left: 85%;
+
+        @include breakpoint(medium up) {
+            width: 80px;
+            bottom: 5%;
+            left: 45%;
+        }
+    }
 }
 
-.web {
+.pxl {
     &__left {
         background-image: url('/images/palms.jpg');
         background-size: cover;
@@ -41,9 +93,36 @@
         transition: all 3s ease;
         transition-delay: .5s;
     }
+
+    .company {
+        position: absolute;
+        font-size: 1.6em;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: bold;
+        color: $white;
+        letter-spacing: -10px;
+        top: 20%;
+        right: 90%;
+
+        @include breakpoint(medium up) {
+            top: 5%;
+            right: 10%;
+        }
+    }
+
+    .title {
+        padding-top: 2rem;
+    }
+
+    .platform-title {
+        @include breakpoint(medium up) {
+            padding-top: 95%;
+        }
+    }
 }
 
-.design {
+.lbsu {
     &__right {
         background-image: url('/images/clouds.jpg');
         background-size: cover;
@@ -67,7 +146,7 @@
     }
 }
 
-.app {
+.lemossa {
     &__right {
         background-image: url('/images/rock.jpg');
         background-size: cover;
@@ -77,6 +156,10 @@
         transition: all 3s ease;
         transition-delay: .5s;
     }
+}
+
+.about {
+    
 }
 
 .contact {
