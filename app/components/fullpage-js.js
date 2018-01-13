@@ -11,7 +11,7 @@ export default Ember.Component.extend({
                     'pxl',
                     'lbsu',
                     'portfolio',
-                    'about',
+                    'lemossa',
                     'contact'
                 ],
                 menu: 'dots',
