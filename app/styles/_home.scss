@@ -96,11 +96,12 @@
 
     .company {
         position: absolute;
+        font-size: 1.6em;
         writing-mode: vertical-rl;
         text-orientation: upright;
         font-weight: bold;
         color: $white;
-        line-height: 1px;
+        letter-spacing: -10px;
         top: 20%;
         right: 90%;
 
