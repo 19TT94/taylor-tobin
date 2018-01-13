@@ -5,10 +5,11 @@
 
     .home-button {
         position: absolute;
-        width: 40px;
+        width: 80px;
         height: 40px;
-        top: -15px;
-        left: -5px;
+        top: -23px;
+        left: -42px;
+        background: $black;
     }
 
     &__logo {
@@ -27,18 +28,18 @@
 
             &--bar {
                 background: $gradient-gold;
-                height: 2px;
+                height: 1px;
 
                 &.flat {
                     position: absolute;
-                    width: 20px;
+                    width: 13px;
                     left: -3px;
                     top: -9px;
                     transform: rotate(0deg);
                     transition: all 1s ease;
 
                     &.initial {
-                        transform: translate(20px);
+                        transform: translate(13px);
                     }
 
                     &.translate {
@@ -46,7 +47,7 @@
                     }
 
                     &.right {
-                        transform: translateX(15px) rotate(35deg);
+                        transform: translateX(13px) rotate(35deg);
                     }
 
                     &.left {
@@ -56,13 +57,13 @@
 
                 &.vert {
                     position: absolute;
-                    width: 20px;
-                    top: 1px;
+                    width:13px;
+                    top: -2px;
                     transform: rotate(90deg);
                     transition: all 1s ease;
 
                     &.right {
-                      left: 10px;
+                      left: 7px;
                     }
 
                     &.translate {
@@ -75,7 +76,7 @@
     }
 
     &__mobile-toggle {
-        margin: 1rem;
+        margin: 2rem;
         position: fixed;
         top: 0;
         right: 0;
@@ -110,7 +111,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            padding: 20px;
+            padding: 15px;
         }
 
         &--link {
