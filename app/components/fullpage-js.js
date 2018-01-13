@@ -28,6 +28,11 @@ export default Ember.Component.extend({
                         self.set('siteState.logo', false);
                     }
                     self.toggleProperty('siteState.image');
+                },
+                afterLoad: function(anchorLink, index) {
+                    if(this[0].classList.contains('home') && self.siteState === false) {
+                        self.toggleProperty('siteState.image');
+                    }
                 }
             });
         });
