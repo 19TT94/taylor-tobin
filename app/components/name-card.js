@@ -1,6 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+    actions: {
+        hideCard: function() {
+            this.toggleProperty('siteState.hideCard');
+        }
+    },
+
     didInsertElement() {
         Ember.run.scheduleOnce('afterRender', () => {
             illookinati({

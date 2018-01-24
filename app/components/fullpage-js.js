@@ -30,8 +30,15 @@ export default Ember.Component.extend({
                     self.toggleProperty('siteState.image');
                 },
                 afterLoad: function(anchorLink, index) {
-                    if(this[0].classList.contains('home') && self.siteState === false) {
+                    let slide = this[0];
+                    let classes = slide.classList;
+
+                    if(classes.contains('home') && self.siteState === false) {
                         self.toggleProperty('siteState.image');
+                    }
+
+                    if(classes.contains('about') && self.siteState === false || classes.contains('contact') && self.siteState === false) {
+                        self.toggleProperty('siteState.hideCard');
                     }
                 }
             });
