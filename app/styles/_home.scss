@@ -120,6 +120,22 @@
             padding-top: 95%;
         }
     }
+
+    .eastern2 {
+        position: absolute;
+        width: 250px;
+        top: 0;
+        left: 0;
+    }
+
+    .eastern1 {
+        position: absolute;
+        width: 250px;
+        bottom: 10%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
 }
 
 .lbsu {
@@ -159,7 +175,9 @@
 }
 
 .about {
-    
+    .background {
+        background-image: url('/images/water.jpg');
+    }
 }
 
 .contact {
