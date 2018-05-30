@@ -8,10 +8,10 @@ export default Ember.Component.extend({
             Ember.$(this.element).fullpage({
                 anchors:[
                     'home',
+                    'intro',
                     'pxl',
                     'lbsu',
-                    'portfolio',
-                    'lemossa',
+                    'portfolios',
                     'about',
                     'contact'
                 ],
@@ -33,7 +33,7 @@ export default Ember.Component.extend({
                     let slide = this[0];
                     let classes = slide.classList;
 
-                    if(classes.contains('home') && self.siteState === false) {
+                    if(classes.contains('intro') && self.siteState === false) {
                         self.toggleProperty('siteState.image');
                     }
 

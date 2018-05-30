@@ -1,14 +1,15 @@
-// Vendor
+
+// Foundation \\
 @import "settings";
 @import 'foundation-sites/foundation';
 @include foundation-everything;
 
 @import 'config';
 
-// Pages
+// Pages \\
 @import 'home';
 
-// Settings
+// Settings \\
 @import 'page';
 @import 'nav';
 @import 'actions';
