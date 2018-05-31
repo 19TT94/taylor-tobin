@@ -7,7 +7,7 @@
         position: absolute;
         width: 80px;
         height: 40px;
-        top: -23px;
+        top: 1rem;
         left: -42px;
         background: $black;
     }
@@ -34,7 +34,7 @@
                     position: absolute;
                     width: 13px;
                     left: -3px;
-                    top: -9px;
+                    top: 2rem;
                     transform: rotate(0deg);
                     transition: all 1s ease;
 
@@ -58,18 +58,13 @@
                 &.vert {
                     position: absolute;
                     width:13px;
-                    top: -2px;
+                    top: 2.4rem;
                     transform: rotate(90deg);
                     transition: all 1s ease;
 
                     &.right {
                       left: 7px;
                     }
-
-                    &.translate {
-                        // transform: translate(0px);
-                    }
-
                 }
             }
         }
@@ -87,7 +82,7 @@
 
         &--bar {
             width: 15px;
-            height: 2px;
+            height: 4px;
             background: $black;
             margin: 2px 0;
         }
@@ -104,7 +99,7 @@
 
     &__expanded {
         display: none;
-        margin: 1rem;
+        margin: 0 2rem;
 
         @include breakpoint (medium up) {
             display: inline-flex;
@@ -116,7 +111,8 @@
 
         &--link {
             color: $white;
-            padding: 0 .5rem;
+            font-size: 1.2em;
+            padding: 2rem 1rem;
         }
     }
 }
